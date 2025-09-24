@@ -1,7 +1,6 @@
 // src/components/Header.js
 import React from 'react';
 import { AppBar, Toolbar, Typography, Box, Avatar, Stack, ToggleButton, ToggleButtonGroup } from '@mui/material';
-import BugReportIcon from '@mui/icons-material/BugReport';
 import CustomLogo from '../images/images.jpg';
 
 const Header = ({ currentUserRole, onRoleChange }) => {

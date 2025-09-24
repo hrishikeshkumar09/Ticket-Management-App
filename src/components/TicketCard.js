@@ -1,6 +1,6 @@
 // src/components/TicketCard.js
 import React from 'react';
-import { Paper, Box, Typography, Chip, Stack } from '@mui/material';
+import { Paper, Typography, Chip, Stack } from '@mui/material';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';

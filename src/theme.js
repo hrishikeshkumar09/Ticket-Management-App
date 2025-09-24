@@ -1,6 +1,6 @@
 // src/theme.js
 import { createTheme } from '@mui/material/styles';
-import { amber, grey, red, green, blue, purple, orange } from '@mui/material/colors';
+import { amber, grey, red, green, purple, orange } from '@mui/material/colors';
 
 const theme = createTheme({
   palette: {
