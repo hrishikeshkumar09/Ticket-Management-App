@@ -2,10 +2,11 @@
 import React from 'react';
 import { Grid, Paper, Box, Typography, Stack } from '@mui/material';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
+//import AccessTimeIcon from '@mui/icons-material/AccessTime'; // This was for 'In Progress', might keep or change
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import FlashOnIcon from '@mui/icons-material/FlashOn';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import ChatBubbleIcon from '@mui/icons-material/ChatBubble'; // NEW: For Total Conversations
 
 const StatCard = ({ title, value, icon, iconColor, valueColor }) => (
   <Grid item xs={12} sm={6} md={2.4}> {/* md={2.4} for 5 items in a row */}
@@ -28,19 +29,19 @@ const DashboardStats = ({ stats }) => {
     <Box sx={{ mb: 4 }}>
       <Grid container spacing={2}>
         <StatCard
-          title="Open Tickets"
+          title="Open Conversations" // CHANGED TITLE
           value={stats.open}
           icon={<ErrorOutlineIcon />}
           iconColor="status.open"
         />
         <StatCard
-          title="In Progress"
-          value={stats.inProgress}
-          icon={<AccessTimeIcon />}
-          iconColor="status.inProgress"
+          title="Total Conversations" // NEW CARD: Total Conversations
+          value={stats.total}
+          icon={<ChatBubbleIcon />}
+          iconColor="primary.main" // Use primary color for total
         />
         <StatCard
-          title="Resolved"
+          title="Resolved" // KEPT TITLE (conversations are resolved)
           value={stats.resolved}
           icon={<CheckCircleOutlineIcon />}
           iconColor="status.resolved"
