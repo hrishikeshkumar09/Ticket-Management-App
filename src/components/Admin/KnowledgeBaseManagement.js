@@ -1,5 +1,5 @@
 // src/components/Admin/KnowledgeBaseManagement.js
-import React, { useState, useMemo, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import {
   Box,
   Typography,
@@ -11,31 +11,25 @@ import {
   DialogActions,
   Stack,
   Paper,
-  InputAdornment,
-  IconButton,
-  List,
-  ListItem,
-  ListItemText,
-  ListItemIcon,
-  Collapse
+  InputAdornment
 } from '@mui/material';
 import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
 import { TreeItem } from '@mui/x-tree-view/TreeItem';
 
 // Icons
-import AddIcon from '@mui/icons-material/Add';
+//import AddIcon from '@mui/icons-material/Add';
 import CreateNewFolderIcon from '@mui/icons-material/CreateNewFolder';
 import FolderIcon from '@mui/icons-material/Folder';
 import FolderOpenIcon from '@mui/icons-material/FolderOpen';
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import UploadFileIcon from '@mui/icons-material/UploadFile';
-import EditIcon from '@mui/icons-material/Edit';
+//import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
-import CloseIcon from '@mui/icons-material/Close';
+//import CloseIcon from '@mui/icons-material/Close';
 import DriveFileRenameOutlineIcon from '@mui/icons-material/DriveFileRenameOutline';
 import DownloadIcon from '@mui/icons-material/Download';
 import LinkIcon from '@mui/icons-material/Link';
-import { blue, red, green, grey } from '@mui/material/colors';
+import { blue, grey } from '@mui/material/colors';
 
 
 // Mock Knowledge Base Structure

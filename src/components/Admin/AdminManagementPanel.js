@@ -30,11 +30,11 @@ import SaveIcon from '@mui/icons-material/Save';
 import CancelIcon from '@mui/icons-material/Cancel';
 
 // Mock user data if not passed from App.js
-const defaultUsers = [
-  { id: 'usr001', name: 'John Doe', email: 'john.doe@company.com', role: 'user' },
-  { id: 'usr002', name: 'Admin User', email: 'admin@company.com', role: 'admin' },
-  { id: 'usr003', name: 'Alice Smith', email: 'alice.smith@company.com', role: 'user' },
-];
+// const defaultUsers = [
+//   { id: 'usr001', name: 'John Doe', email: 'john.doe@company.com', role: 'user' },
+//   { id: 'usr002', name: 'Admin User', email: 'admin@company.com', role: 'admin' },
+//   { id: 'usr003', name: 'Alice Smith', email: 'alice.smith@company.com', role: 'user' },
+// ];
 
 const AdminManagementPanel = ({ users, onAddUser, onUpdateUser, onDeleteUser }) => {
   const [editingUser, setEditingUser] = useState(null); // User object being edited

@@ -28,7 +28,7 @@
 
 // src/components/Admin/AdminPanel.js (This remains a general placeholder for other admin tools)
 import React from 'react';
-import { Box, Typography, Paper } from '@mui/material';
+import { Typography, Paper } from '@mui/material';
 
 const AdminPanel = () => {
   return (
